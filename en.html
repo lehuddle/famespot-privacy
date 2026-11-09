@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Famespot</title>
+<meta name="robots" content="index,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* Layout: single-column document, title-card header, numbered sections like a film programme */
+  :root {
+    --bg: #F8F3E6;
+    --surface: #FFFBF2;
+    --fg: #201C17;
+    --muted: #6E6554;
+    --accent: #8A6A24;
+    --line: #E4D8BC;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14120E;
+      --surface: #201C17;
+      --fg: #EDE3D0;
+      --muted: #9C9282;
+      --accent: #C9A24B;
+      --line: #37312A;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14120E;
+    --surface: #201C17;
+    --fg: #EDE3D0;
+    --muted: #9C9282;
+    --accent: #C9A24B;
+    --line: #37312A;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "Work Sans", -apple-system, "Segoe UI", sans-serif;
+    padding-inline: 20px;
+    padding-block: 48px;
+    line-height: 1.6;
+  }
+
+  .page {
+    max-width: 680px;
+    margin-inline: auto;
+  }
+
+  .wordmark {
+    font-family: "Work Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 18px;
+  }
+
+  h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(28px, 6vw, 40px);
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+
+  .meta {
+    color: var(--muted);
+    font-size: 14px;
+    margin: 0 0 8px;
+  }
+
+  .intro {
+    font-size: 16px;
+    color: var(--fg);
+    margin: 28px 0 0;
+    padding: 18px 20px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+  }
+
+  nav.toc {
+    margin: 36px 0 0;
+    padding: 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding-block: 18px;
+  }
+  nav.toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 6px;
+  }
+  nav.toc a {
+    color: var(--fg);
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
+  }
+  nav.toc a:hover { color: var(--accent); }
+  nav.toc .num {
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    width: 1.4em;
+    flex: none;
+  }
+
+  section {
+    margin-top: 44px;
+    scroll-margin-top: 20px;
+  }
+
+  h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin: 0 0 14px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+  h2 .num {
+    color: var(--accent);
+    font-size: 15px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+
+  h3 {
+    font-family: "Work Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--accent);
+    margin: 22px 0 8px;
+  }
+
+  p { margin: 0 0 14px; max-width: 62ch; }
+  p:last-child { margin-bottom: 0; }
+
+  ul { margin: 0 0 14px; padding-left: 20px; max-width: 62ch; }
+  li { margin-bottom: 6px; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin: 0 0 14px;
+  }
+  .card p:last-child { margin-bottom: 0; }
+
+  .label {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+
+  a { color: var(--accent); }
+  a:not(nav.toc a) { text-decoration-thickness: 1px; }
+
+  .contact-block {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .contact-block .name {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .contact-block .email {
+    font-size: 15px;
+    color: var(--accent);
+  }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  .not-list {
+    display: grid;
+    gap: 8px;
+    margin: 0 0 14px;
+    padding: 0;
+    list-style: none;
+    max-width: 62ch;
+  }
+  .not-list li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-size: 15px;
+  }
+  .not-list li::before {
+    content: "—";
+    color: var(--accent);
+    flex: none;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <p class="wordmark">Famespot</p>
+  <p class="meta"><a href="index.html" hreflang="fr">Version française</a></p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: November 9, 2026</p>
+  <p class="meta">iOS and Android mobile app — internal technical name “PopSpot”</p>
+
+  <div class="intro">
+    Famespot helps you find filming locations, landmarks and spots linked to celebrities, music videos or video games around you. This page explains, in plain language, the little data the app processes in order to work — and above all everything it does not do.
+  </div>
+
+  <nav class="toc" aria-label="Contents">
+    <ol>
+      <li><a href="#qui"><span class="num">1</span> Who publishes this app</a></li>
+      <li><a href="#principe"><span class="num">2</span> The principle: as little data as possible</a></li>
+      <li><a href="#donnees"><span class="num">3</span> The data we process</a></li>
+      <li><a href="#jamais"><span class="num">4</span> What we never do</a></li>
+      <li><a href="#tiers"><span class="num">5</span> Third-party services</a></li>
+      <li><a href="#conservation"><span class="num">6</span> Retention</a></li>
+      <li><a href="#droits"><span class="num">7</span> Your rights</a></li>
+      <li><a href="#securite"><span class="num">8</span> Security</a></li>
+      <li><a href="#age"><span class="num">9</span> Minimum age</a></li>
+      <li><a href="#modifications"><span class="num">10</span> Changes to this policy</a></li>
+      <li><a href="#contact"><span class="num">11</span> Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="qui">
+    <h2><span class="num">01</span> Who publishes this app</h2>
+    <p>Famespot is developed and published by Anthony Raitif, an independent developer. The app is distributed on the App Store and the Google Play Store under the identifier <code>com.anthonyraitif.popspot</code>.</p>
+  </section>
+
+  <section id="principe">
+    <h2><span class="num">02</span> The principle: as little data as possible</h2>
+    <p>Famespot does not ask you to create an account. No name, no email address, no phone number, no password. Almost everything the app does happens directly on your phone, without ever going through a server.</p>
+  </section>
+
+  <section id="donnees">
+    <h2><span class="num">03</span> The data we process</h2>
+
+    <h3>Your location</h3>
+    <div class="card">
+      <span class="label">Foreground</span>
+      <p>While the app is open, your location is used to center the map and show you nearby places. This data stays on your phone — it is never sent to our servers or to any third party.</p>
+    </div>
+    <div class="card">
+      <span class="label">Background (optional)</span>
+      <p>If you turn it on, Famespot can monitor your location even when the app is closed, in order to notify you when you get close to a place. This proximity calculation (“geofencing”) is done entirely on your phone: no GPS coordinates are transmitted anywhere. You can withdraw this permission at any time in your phone’s settings.</p>
+    </div>
+
+    <h3>Notifications</h3>
+    <p>The notifications you receive (for example “You are near [place]”) are generated directly by your phone. We do not run a server that sends you push notifications: no data leaves your device for this feature.</p>
+
+    <h3>Language and display preferences</h3>
+    <p>Your chosen language and your search filters (categories, decades, sorting) are saved only in your phone’s local storage, so the app remembers your preferences from one session to the next. This data is never sent anywhere else.</p>
+
+    <h3>Tour ratings</h3>
+    <p>If you rate a themed tour (from 1 to 5 stars), the rating is sent to our database to compute the average shown to all users. It is tied to an anonymous identifier randomly generated on your phone the first time you vote — this identifier is linked neither to your name, nor to your email, nor to your device’s advertising or hardware identifier. It is used only to prevent you from voting twice for the same tour and to let you change your rating later.</p>
+  </section>
+
+  <section id="jamais">
+    <h2><span class="num">04</span> What we never do</h2>
+    <ul class="not-list">
+      <li>Sell your data to third parties.</li>
+      <li>Show targeted advertising or include an advertising SDK.</li>
+      <li>Track you across apps or websites.</li>
+      <li>Collect an advertising identifier (IDFA on iOS, GAID on Android).</li>
+      <li>Ask you to create an account or a password, or to provide your email.</li>
+    </ul>
+  </section>
+
+  <section id="tiers">
+    <h2><span class="num">05</span> Third-party services</h2>
+    <p><strong>Firebase (Google)</strong> — stores only the tour ratings described in section 3. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google’s privacy policy</a>.</p>
+    <p><strong>Maps</strong> — on Android, the map relies on the Google Maps SDK; on iPhone, it uses Apple Maps. Each is subject to its provider’s terms (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google</a>, <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple</a>).</p>
+    <p><strong>Wikipedia (Wikimedia)</strong> — to display a photo of a place, the app queries Wikipedia’s public API. Wikimedia then receives, as with any website, your device’s IP address and the name of the requested page; no other data is transmitted. See the <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" target="_blank" rel="noopener">Wikimedia Foundation’s privacy policy</a>.</p>
+    <p><strong>Expo / EAS Update</strong> — the technical service that lets us deploy fixes without going through the stores may receive basic technical information (app version, OS version), with no personally identifiable data.</p>
+  </section>
+
+  <section id="conservation">
+    <h2><span class="num">06</span> Retention</h2>
+    <p><strong>Location</strong> — never stored beyond the current session on your phone; we receive none on our servers.</p>
+    <p><strong>Local preferences</strong> (language, filters) — kept on your phone until you uninstall the app or reset them.</p>
+    <p><strong>Tour ratings</strong> — kept on our servers as long as the tour exists in the app, or until you ask for deletion (see section 7).</p>
+  </section>
+
+  <section id="droits">
+    <h2><span class="num">07</span> Your rights</h2>
+    <p>Because Famespot collects neither a name nor an email, most of your rights are exercised directly on your phone:</p>
+    <ul>
+      <li>Withdraw the location permission at any time in the OS settings.</li>
+      <li>Uninstalling the app immediately deletes all locally stored preferences.</li>
+    </ul>
+    <p>For tour ratings — the only data that goes through our servers — you can request their deletion by writing to us (see section 11). We will process your request within a reasonable time.</p>
+  </section>
+
+  <section id="securite">
+    <h2><span class="num">08</span> Security</h2>
+    <p>Tour ratings are protected by access rules that limit writes to the expected data formats. No sensitive information is stored on our servers.</p>
+  </section>
+
+  <section id="age">
+    <h2><span class="num">09</span> Minimum age</h2>
+    <p>Famespot is not specifically aimed at children under 13 and does not knowingly collect any identifiable data from them.</p>
+  </section>
+
+  <section id="modifications">
+    <h2><span class="num">10</span> Changes to this policy</h2>
+    <p>This policy may change if the app changes. The date of the last update is shown at the top of this page. Significant changes will, where possible, be announced in the app.</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">11</span> Contact</h2>
+    <p>For any question about this policy or to exercise your rights:</p>
+    <div class="contact-block">
+      <span class="name">Anthony Raitif</span>
+      <span class="email">lehuddle.pro@gmail.com</span>
+    </div>
+    <h3>Removing a place</h3>
+    <p>Famespot lists publicly known filming locations and landmarks. The app is not affiliated with any studio, artist or brand: titles and names are used only to describe places. If you own or live at a listed place, or believe it should not appear, write to us at the address above with the name of the place and we will remove it promptly.</p>
+  </section>
+
+  <footer>
+    Famespot (PopSpot) — com.anthonyraitif.popspot
+  </footer>
+</div>
+
+</body>
+</html>

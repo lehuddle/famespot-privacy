@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — Famespot</title>
+<meta name="robots" content="index,follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* Layout: single-column document, title-card header, numbered sections like a film programme */
+  :root {
+    --bg: #F8F3E6;
+    --surface: #FFFBF2;
+    --fg: #201C17;
+    --muted: #6E6554;
+    --accent: #8A6A24;
+    --line: #E4D8BC;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14120E;
+      --surface: #201C17;
+      --fg: #EDE3D0;
+      --muted: #9C9282;
+      --accent: #C9A24B;
+      --line: #37312A;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14120E;
+    --surface: #201C17;
+    --fg: #EDE3D0;
+    --muted: #9C9282;
+    --accent: #C9A24B;
+    --line: #37312A;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "Work Sans", -apple-system, "Segoe UI", sans-serif;
+    padding-inline: 20px;
+    padding-block: 48px;
+    line-height: 1.6;
+  }
+
+  .page {
+    max-width: 680px;
+    margin-inline: auto;
+  }
+
+  .wordmark {
+    font-family: "Work Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 18px;
+  }
+
+  h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: clamp(28px, 6vw, 40px);
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+
+  .meta {
+    color: var(--muted);
+    font-size: 14px;
+    margin: 0 0 8px;
+  }
+
+  .intro {
+    font-size: 16px;
+    color: var(--fg);
+    margin: 28px 0 0;
+    padding: 18px 20px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+  }
+
+  nav.toc {
+    margin: 36px 0 0;
+    padding: 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding-block: 18px;
+  }
+  nav.toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 6px;
+  }
+  nav.toc a {
+    color: var(--fg);
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
+  }
+  nav.toc a:hover { color: var(--accent); }
+  nav.toc .num {
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+    width: 1.4em;
+    flex: none;
+  }
+
+  section {
+    margin-top: 44px;
+    scroll-margin-top: 20px;
+  }
+
+  h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin: 0 0 14px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+  h2 .num {
+    color: var(--accent);
+    font-size: 15px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+
+  h3 {
+    font-family: "Work Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--accent);
+    margin: 22px 0 8px;
+  }
+
+  p { margin: 0 0 14px; max-width: 62ch; }
+  p:last-child { margin-bottom: 0; }
+
+  ul { margin: 0 0 14px; padding-left: 20px; max-width: 62ch; }
+  li { margin-bottom: 6px; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin: 0 0 14px;
+  }
+  .card p:last-child { margin-bottom: 0; }
+
+  .label {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+
+  a { color: var(--accent); }
+  a:not(nav.toc a) { text-decoration-thickness: 1px; }
+
+  .contact-block {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .contact-block .name {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .contact-block .email {
+    font-size: 15px;
+    color: var(--accent);
+  }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  .not-list {
+    display: grid;
+    gap: 8px;
+    margin: 0 0 14px;
+    padding: 0;
+    list-style: none;
+    max-width: 62ch;
+  }
+  .not-list li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-size: 15px;
+  }
+  .not-list li::before {
+    content: "—";
+    color: var(--accent);
+    flex: none;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <p class="wordmark">Famespot</p>
+  <p class="meta"><a href="en.html" hreflang="en">English version</a></p>
+  <h1>Politique de confidentialité</h1>
+  <p class="meta">Dernière mise à jour : 9 novembre 2026</p>
+  <p class="meta">Application mobile iOS et Android — nom technique interne « PopSpot »</p>
+
+  <div class="intro">
+    Famespot t'aide à repérer les lieux de tournage, lieux marquants et spots liés à des célébrités, clips musicaux ou jeux vidéo autour de toi. Cette page explique, sans jargon, les quelques données que l'app traite pour fonctionner — et surtout tout ce qu'elle ne fait pas.
+  </div>
+
+  <nav class="toc" aria-label="Sommaire">
+    <ol>
+      <li><a href="#qui"><span class="num">1</span> Qui édite cette application</a></li>
+      <li><a href="#principe"><span class="num">2</span> Le principe : le moins de données possible</a></li>
+      <li><a href="#donnees"><span class="num">3</span> Les données que nous traitons</a></li>
+      <li><a href="#jamais"><span class="num">4</span> Ce que nous ne faisons jamais</a></li>
+      <li><a href="#tiers"><span class="num">5</span> Services tiers utilisés</a></li>
+      <li><a href="#conservation"><span class="num">6</span> Durée de conservation</a></li>
+      <li><a href="#droits"><span class="num">7</span> Tes droits</a></li>
+      <li><a href="#securite"><span class="num">8</span> Sécurité</a></li>
+      <li><a href="#age"><span class="num">9</span> Âge minimum</a></li>
+      <li><a href="#modifications"><span class="num">10</span> Modifications de cette politique</a></li>
+      <li><a href="#contact"><span class="num">11</span> Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="qui">
+    <h2><span class="num">01</span> Qui édite cette application</h2>
+    <p>Famespot est développée et éditée par Anthony Raitif, développeur indépendant. L'application est distribuée sur l'App Store et le Google Play Store sous l'identifiant <code>com.anthonyraitif.popspot</code>.</p>
+  </section>
+
+  <section id="principe">
+    <h2><span class="num">02</span> Le principe : le moins de données possible</h2>
+    <p>Famespot ne demande pas de créer de compte. Pas de nom, pas d'adresse e-mail, pas de numéro de téléphone, pas de mot de passe. La quasi-totalité de ce que fait l'application se passe directement sur ton téléphone, sans jamais transiter par un serveur.</p>
+  </section>
+
+  <section id="donnees">
+    <h2><span class="num">03</span> Les données que nous traitons</h2>
+
+    <h3>Ta position géographique</h3>
+    <div class="card">
+      <span class="label">Premier plan</span>
+      <p>Quand l'app est ouverte, ta position sert à centrer la carte et à te montrer les lieux à proximité. Cette donnée reste sur ton téléphone — elle n'est jamais envoyée à nos serveurs ni à un tiers.</p>
+    </div>
+    <div class="card">
+      <span class="label">Arrière-plan (optionnel)</span>
+      <p>Si tu l'actives, Famespot peut surveiller ta position même quand l'app est fermée, pour te prévenir par notification quand tu t'approches d'un lieu. Ce calcul de proximité (« géofencing ») se fait entièrement sur ton téléphone : aucune coordonnée GPS n'est transmise où que ce soit. Tu peux retirer cette autorisation à tout moment dans les réglages de ton téléphone.</p>
+    </div>
+
+    <h3>Notifications</h3>
+    <p>Les notifications que tu reçois (par exemple « Tu es près de [lieu] ») sont générées directement par ton téléphone. Nous n'avons pas de serveur qui t'envoie des notifications push : aucune donnée ne quitte ton appareil pour cette fonctionnalité.</p>
+
+    <h3>Langue et préférences d'affichage</h3>
+    <p>Ta langue choisie, tes filtres de recherche (catégories, décennies, tri) sont enregistrés uniquement dans le stockage local de ton téléphone, pour que l'app se souvienne de tes préférences d'une session à l'autre. Ces données ne sont jamais transmises ailleurs.</p>
+
+    <h3>Notes données aux circuits</h3>
+    <p>Si tu notes un circuit touristique (de 1 à 5 étoiles), cette note est envoyée à notre base de données pour calculer la moyenne affichée à tous les utilisateurs. Elle est associée à un identifiant anonyme généré au hasard sur ton téléphone lors de ton premier vote — cet identifiant n'est lié ni à ton nom, ni à ton e-mail, ni à l'identifiant publicitaire ou matériel de ton appareil. Il sert uniquement à t'éviter de voter deux fois pour le même circuit et à te permettre de modifier ta note plus tard.</p>
+  </section>
+
+  <section id="jamais">
+    <h2><span class="num">04</span> Ce que nous ne faisons jamais</h2>
+    <ul class="not-list">
+      <li>Vendre tes données à des tiers.</li>
+      <li>Afficher de la publicité ciblée ou intégrer un SDK publicitaire.</li>
+      <li>Te suivre d'une application ou d'un site web à l'autre.</li>
+      <li>Collecter un identifiant publicitaire (IDFA sur iOS, GAID sur Android).</li>
+      <li>Te demander de créer un compte, un mot de passe ou de fournir ton e-mail.</li>
+    </ul>
+  </section>
+
+  <section id="tiers">
+    <h2><span class="num">05</span> Services tiers utilisés</h2>
+    <p><strong>Firebase (Google)</strong> — stocke uniquement les notes de circuits décrites en section 3. Voir la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">politique de confidentialité de Google</a>.</p>
+    <p><strong>Cartographie</strong> — sur Android, la carte s'appuie sur le SDK Google Maps ; sur iPhone, elle utilise Apple Plans. Chacun est soumis aux conditions de son éditeur (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google</a>, <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple</a>).</p>
+    <p><strong>Wikipédia (Wikimedia)</strong> — pour afficher la photo d'un lieu, l'app interroge l'API publique de Wikipédia. Wikimedia reçoit alors, comme pour n'importe quel site web, l'adresse IP de ton appareil et le nom de la page demandée ; aucune autre donnée n'est transmise. Voir la <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" target="_blank" rel="noopener">politique de confidentialité de la Fondation Wikimedia</a>.</p>
+    <p><strong>Expo / EAS Update</strong> — le service technique qui permet de déployer des correctifs sans repasser par les stores peut recevoir des informations techniques basiques (version de l'app, de l'OS), sans donnée personnelle identifiable.</p>
+  </section>
+
+  <section id="conservation">
+    <h2><span class="num">06</span> Durée de conservation</h2>
+    <p><strong>Position</strong> — jamais stockée au-delà de la session en cours sur ton téléphone ; nous n'en recevons aucune sur nos serveurs.</p>
+    <p><strong>Préférences locales</strong> (langue, filtres) — conservées sur ton téléphone jusqu'à ce que tu désinstalles l'app ou les réinitialises.</p>
+    <p><strong>Notes de circuits</strong> — conservées sur nos serveurs tant que le circuit existe dans l'app, ou jusqu'à ta demande de suppression (voir section 7).</p>
+  </section>
+
+  <section id="droits">
+    <h2><span class="num">07</span> Tes droits</h2>
+    <p>Famespot ne collectant ni nom ni e-mail, l'essentiel de tes droits s'exerce directement sur ton téléphone :</p>
+    <ul>
+      <li>Retirer la permission de localisation à tout moment dans les réglages de l'OS.</li>
+      <li>Désinstaller l'app supprime immédiatement toutes les préférences stockées localement.</li>
+    </ul>
+    <p>Pour les notes de circuits — la seule donnée qui transite par nos serveurs — tu peux demander leur suppression en nous écrivant (voir section 11). Nous traiterons ta demande dans un délai raisonnable.</p>
+  </section>
+
+  <section id="securite">
+    <h2><span class="num">08</span> Sécurité</h2>
+    <p>Les notes de circuits sont protégées par des règles d'accès qui limitent les écritures aux formats de données attendus. Aucune information sensible n'est stockée sur nos serveurs.</p>
+  </section>
+
+  <section id="age">
+    <h2><span class="num">09</span> Âge minimum</h2>
+    <p>Famespot ne s'adresse pas spécifiquement aux enfants de moins de 13 ans et ne collecte sciemment aucune donnée identifiable auprès d'eux.</p>
+  </section>
+
+  <section id="modifications">
+    <h2><span class="num">10</span> Modifications de cette politique</h2>
+    <p>Cette politique peut évoluer si l'application change. La date de dernière mise à jour est indiquée en haut de cette page. Les changements significatifs seront, dans la mesure du possible, signalés dans l'application.</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">11</span> Contact</h2>
+    <p>Pour toute question sur cette politique ou pour exercer tes droits :</p>
+    <div class="contact-block">
+      <span class="name">Anthony Raitif</span>
+      <span class="email">lehuddle.pro@gmail.com</span>
+    </div>
+    <h3>Retrait d'un lieu</h3>
+    <p>Famespot recense des lieux de tournage et des lieux marquants connus du public. L'application n'est affiliée à aucun studio, artiste ou marque : les titres et les noms ne servent qu'à décrire les lieux. Si tu es propriétaire ou occupant d'un lieu référencé, ou si tu estimes qu'il ne devrait pas y figurer, écris-nous à l'adresse ci-dessus en indiquant le nom du lieu : nous le retirerons rapidement.</p>
+  </section>
+
+  <footer>
+    Famespot (PopSpot) — com.anthonyraitif.popspot
+  </footer>
+</div>
+
+</body>
+</html>
